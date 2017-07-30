@@ -1,0 +1,82 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#js-carousel {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  overflow: hidden; }
+  #js-carousel ul {
+    width: 2000px; }
+  #js-carousel li {
+    width: 400px;
+    height: 400px;
+    float: left; }
+
+.picture1 {
+  background: url("https://static.pexels.com/photos/6526/sea-beach-holiday-vacation.jpg"); }
+
+.picture2 {
+  background: url("https://static.pexels.com/photos/37921/maldives-ile-beach-sun-37921.jpeg"); }
+
+.picture3 {
+  background: url("https://static.pexels.com/photos/279574/pexels-photo-279574.jpeg"); }
+
+.picture4 {
+  background: url("https://static.pexels.com/photos/6567/sea-beach-holiday-vacation.jpg"); }
+
+.picture5 {
+  background: url("https://static.pexels.com/photos/6557/sea-man-person-holiday.jpg"); }
+
+.picture1, .picture2, .picture3, .picture4, .picture5 {
+  background-position: center;
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */
