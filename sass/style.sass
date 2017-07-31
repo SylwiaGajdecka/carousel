@@ -1,5 +1,9 @@
 @import _reset
 
+$blue: #3498db
+
+body 
+	background: lighten($blue, 40%)
 
 #js-carousel
 	width: 400px
@@ -9,29 +13,81 @@
 	left: 50%
 	margin-top: -200px
 	margin-left: -200px
-	overflow: hidden
 	ul 
 		width: 2000px
 	li 
 		width: 400px
 		height: 400px
 		float: left
+		font-size: 30px
+		line-height: 400px
+		text-align: center
 
 .picture1
-	background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation.jpg')
+	background: aqua
 
 .picture2
-	background: url('https://static.pexels.com/photos/37921/maldives-ile-beach-sun-37921.jpeg')
+	background: magenta
 
 .picture3
-	background: url('https://static.pexels.com/photos/279574/pexels-photo-279574.jpeg')
+	background: yellow
 
 .picture4
-	background: url('https://static.pexels.com/photos/6567/sea-beach-holiday-vacation.jpg')
+	background: lime
 
 .picture5
-	background: url('https://static.pexels.com/photos/6557/sea-man-person-holiday.jpg')
+	background: silver
 
 .picture1, .picture2, .picture3, .picture4, .picture5
 	background-position: center
 	background-size: cover
+
+.circle
+	border: 1px $blue solid 
+	border-radius: 100%
+	width: 15px
+	height: 15px
+	padding: 5px
+	text-align: center
+	font-weight: bold
+	background: $blue
+	color: lighten($blue, 40%)
+	font-size: 20px
+	line-height: 15px
+	&:hover
+		cursor: pointer
+		background: lighten($blue, 10%)
+		border-color: lighten($blue, 10%)
+
+.circle--left
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-left: -230px
+
+.circle--right
+	position: absolute
+	top: 50%
+	right: 50%
+	margin-right: -230px
+
+.controls
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: 150px
+  margin-left: -50px
+  
+#js-controlItem 
+	border: 1px solid white
+	border-radius: 100%
+	background: white
+	width: 10px
+	height: 10px
+	float: left
+	margin: 5px
+	transition: .3s
+	&:hover
+		cursor: pointer
+		background: rgba(255, 255, 255, 0.8)
+		transform: scale(1.2)
