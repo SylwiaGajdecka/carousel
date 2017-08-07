@@ -38,7 +38,7 @@ body
 .picture5
 	background: silver
 
-.picture1, .picture2, .picture3, .picture4, .picture5
+.picture
 	background-position: center
 	background-size: cover
 
@@ -78,16 +78,18 @@ body
   margin-top: 150px
   margin-left: -50px
   
-#js-controlItem 
+.js-controlItem 
 	border: 1px solid white
 	border-radius: 100%
-	background: white
+	background: rgba(255, 255, 255, 0.5)
 	width: 10px
 	height: 10px
 	float: left
 	margin: 5px
-	transition: .3s
+	transition: .2s
 	&:hover
 		cursor: pointer
-		background: rgba(255, 255, 255, 0.8)
 		transform: scale(1.2)
+
+.controlItem-first 
+	background: white
