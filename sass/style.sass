@@ -1,0 +1,95 @@
+@import _reset
+
+$blue: #3498db
+
+body 
+	background: lighten($blue, 40%)
+
+#js-carousel
+	width: 400px
+	height: 400px
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -200px
+	margin-left: -200px
+	ul 
+		width: 2000px
+	li 
+		width: 400px
+		height: 400px
+		float: left
+		font-size: 30px
+		line-height: 400px
+		text-align: center
+
+.picture1
+	background: aqua
+
+.picture2
+	background: magenta
+
+.picture3
+	background: yellow
+
+.picture4
+	background: lime
+
+.picture5
+	background: silver
+
+.picture
+	background-position: center
+	background-size: cover
+
+.circle
+	border: 1px $blue solid 
+	border-radius: 100%
+	width: 15px
+	height: 15px
+	padding: 5px
+	text-align: center
+	font-weight: bold
+	background: $blue
+	color: lighten($blue, 40%)
+	font-size: 20px
+	line-height: 15px
+	&:hover
+		cursor: pointer
+		background: lighten($blue, 10%)
+		border-color: lighten($blue, 10%)
+
+.circle--left
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-left: -230px
+
+.circle--right
+	position: absolute
+	top: 50%
+	right: 50%
+	margin-right: -230px
+
+.controls
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: 150px
+  margin-left: -50px
+  
+.js-controlItem 
+	border: 1px solid white
+	border-radius: 100%
+	background: rgba(255, 255, 255, 0.5)
+	width: 10px
+	height: 10px
+	float: left
+	margin: 5px
+	transition: .2s
+	&:hover
+		cursor: pointer
+		transform: scale(1.2)
+
+.controlItem-first 
+	background: white
